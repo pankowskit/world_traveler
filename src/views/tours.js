@@ -1,11 +1,15 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import ToursS1 from "../components/tours-s1";
 
-function Tours(){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Tours extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-footer-adj p-0">
+                <ToursS1/>
+            </Container>    
+        );
+    }
 }
 
 export default Tours;
